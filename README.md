@@ -1,4 +1,4 @@
-## What is the Label Studio ML backend?
+## Using Label Studio with YOLOV5
 
 The Label Studio ML backend is an SDK that lets you wrap your machine learning code and turn it into a web server.
 You can then connect that server to a Label Studio instance to perform 2 tasks:
@@ -6,16 +6,16 @@ You can then connect that server to a Label Studio instance to perform 2 tasks:
 - Dynamically pre-annotate data based on model inference results
 - Retrain or fine-tune a model based on recently annotated data
 
-If you just need to load static pre-annotated data into Label Studio, running an ML backend might be overkill for you. Instead, you can [import preannotated data](https://labelstud.io/guide/predictions.html).
+This repository helps you to add Yolov5 as backend model so that you can speed up object annotations. The predictions are added directly into the labeling interface of Label-studio, so that you don't have to perform labeling from scratch.
+
+No need to write user-interface scripts from scratch to make a model-assisted labeling environment. Labeling studio has a great integration and can save you a lot of time and pain of writing your labeling interface from scratch.
 
 ## How it works
 
-1. Get your model code
-2. Wrap it with the Label Studio SDK
-3. Create a running server script
-4. Launch the script
+1. Add the yolov5 model checkpoint along with config file to the repository.
+2. Create a running server script to deploy the model as callable backend.
+4. Launch the model service using the script.
 5. Connect Label Studio to ML backend on the UI
-
 
 ## Quickstart
 
